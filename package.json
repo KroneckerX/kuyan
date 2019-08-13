@@ -1,0 +1,24 @@
+{
+  "name": "kuyan-eventbus",
+  "version": "1.0.0",
+  "description": "Eventbus publisher",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "eventbus",
+    "rabbitmq"
+  ],
+  "author": "Ferhat Dündar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/amqplib": "^0.5.12",
+    "@types/bluebird": "^3.5.27",
+    "amqplib": "^0.5.3"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  }
+}
