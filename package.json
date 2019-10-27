@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "cross-env TS_NODE_FILES=true mocha --exit --require ts-node/register --colors tests/**/*.spec.ts",
+    "coverage": "nyc npm run test"
   },
   "keywords": [
     "eventbus",
@@ -19,6 +21,13 @@
     "amqplib": "^0.5.3"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.4.1",
     "typescript": "^2.7.2"
   }
 }
